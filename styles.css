@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #D0D0D0;
+}
+
+header {
+  line-height: 1.4;
+  padding: 2rem 1rem .5rem 1.5rem;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 1rem 0;
+  line-height: 2;
+}
+
+h3 {
+  font-size: .8rem;
+  margin: .6rem 0;
+  font-weight: 100;
+}
+h4 {
+  margin-top: .4rem;
+}
+
+button {
+  background-color: #39BE76;
+  border: 2px solid white;
+  color: white;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  width: 8rem;
+}
+
+.wrapper {
+  color: white;
+  display: grid;
+  font-size: .7rem;
+  grid-auto-columns: 1fr 1fr 1fr 2fr;
+  grid-auto-rows: minmax(16rem, 33vh);
+  border: 1rem solid #D0D0D0;
+  text-align: center;
+}
+
+.intro {
+  background-color: #39BE76;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.header-icons {
+  height: 16px;
+  display: inline-block;
+  margin-right: .2rem;
+  width: 16px;
+}
+
+.profile {
+  background-color: #FF9E00;
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #1E8BC4;
+}
+
+.education { 
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #F15A49;
+}
+
+.photo {
+  background-image: url("https://farm2.staticflickr.com/1770/42912719711_167cdbc8c7_b.jpg");
+  background-position: right; 
+  grid-column: 4;
+  grid-row: 1 / 4;  
+  background-color: black;
+  background-size: cover;
+}
+
+.blog {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #39BE76;
+}
+
+.contact {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: #1E8BC4;
+}
+
+.portfolio {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: #F46026;
+}
+
+.social-menu {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #F46026;
+}
+
+.icons {
+  /*margin: 6rem auto 0 auto;*/
+  width: 3.5rem;
+  display: block;
+}
+
+.dots {
+  height: 40px;
+  left: 43%;
+  position: relative;
+  top: .6rem;
+}
+
+.arrow-left {
+  float: left;
+  transform: rotate(180deg);
+}
+
+.arrow-right {
+  float: right;
+}
+
+.arrow-right, 
+.arrow-left {
+  height: 40px;
+  position: relative;
+  top: 93%;
+}
+.resume-button {
+  margin-right: .5rem;
+}
+
+article:link, a:link {
+  color: white;
+  text-decoration: none;
+}
+
+article:visited, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+article:hover, a:hover, button:hover {
+  background-color: grey;
+}
+
+@media screen and (max-width: 1122px) {
+
+      header {
+        padding: 1rem 1rem 1rem 1.5rem;
+      }
+
+      h4 {
+        margin-bottom: 2rem;
+      }
+
+      .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(13rem, 20vh);
+      }
+
+      .intro {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .profile {
+        grid-column: 2;
+        grid-row: 1;
+        padding-top: 1.2rem;
+      }
+
+      .experience {
+        grid-column: 2;
+        grid-row: 3;
+      }
+
+      .education { 
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      .blog {
+        grid-column: 1;
+        grid-row: 4;
+      }
+
+      .social-menu {
+        grid-column: 2;
+        grid-row: 4;
+      }
+  
+      .contact {
+        grid-column: 2;
+        grid-row: 5;
+      }
+
+      .portfolio {
+        grid-column: 1;
+        grid-row: 5;
+      }
+
+      .photo {
+        background-image: url("steamboat.jpg");  
+        background-position: bottom;
+        grid-column: 1 / 3;
+        grid-row: 2;  
+        height: 20rem;     
+      }
+
+      .icons {
+        height: 4rem;
+        margin: 3.5rem auto 0rem auto;
+        width: 4rem;
+      }
+
+      .dots {
+        height: 30px;
+        left: 46%;
+        position: relative;
+        top: .2rem;
+      }
+
+      .arrow-right, 
+      .arrow-left {
+        height: 50px;
+        position: relative;
+        top: 40%;
+      }
+
+}
+
+@media screen and (max-width: 780px) {
+
+      .wrapper {
+        grid-auto-rows: minmax(12rem, auto);
+      }
+
+      .intro {
+        grid-column: 1 / 3;
+        grid-row: 1;
+      }
+
+      .profile {
+        grid-column: 1;
+        grid-row: 3;
+        padding-top: 0;
+      }
+
+      .experience {
+        grid-column: 2;
+        grid-row: 3;
+      }
+
+      .education { 
+        grid-column: 1;
+        grid-row: 4;
+      }
+
+      .blog {
+        grid-column: 2;
+        grid-row: 4;
+      }
+
+      .social-menu {
+        grid-column: 1;
+        grid-row: 5;
+        background-color: #FF9E00;
+      }
+
+      .portfolio {
+        grid-column: 2;
+        grid-row: 5;
+      }
+  
+      .contact {
+        grid-column: 1 / 3;
+        grid-row: 6;
+      }
+
+      .photo {
+        grid-column: 1 / 3;
+        grid-row: 2;  
+        background-position: bottom;
+        background-image: url("steamboat.jpg");
+        height: 18rem;
+      }
+
+      .arrow-right, 
+      .arrow-left {
+        height: 30px;
+        position: relative;
+        top: 45%;
+      }
+
+@media screen and (max-width: 500px) {
+
+      header {
+        text-align: center;
+      }
+
+
+      h4 {
+        padding-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .wrapper {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(2rem, auto);
+      }
+
+      .intro {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .profile {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      .experience {
+        grid-column: 1;
+        grid-row: 4;
+      }
+
+      .education { 
+        grid-column: 1;
+        grid-row: 5;
+      }
+
+      .blog {
+        grid-column: 1;
+        grid-row: 6;
+      }
+
+      .social-menu {
+        grid-column: 1;
+        grid-row: 7;
+      }
+  
+      .contact {
+        grid-column: 1;
+        grid-row: 8;
+      }
+
+      .portfolio {
+        grid-column: 1;
+        grid-row: 9;
+      }
+
+      .photo {
+        grid-column: 1;
+        grid-row: 2;  
+        background-position: left;
+        background-image: url("steamboat.jpg");
+        height: 14rem;
+      }
+
+      .icons {
+        display: inline;
+        margin: 2.5rem auto 0 auto;
+        height: 3rem;
+        width: 3rem;
+        float: left;
+        position: relative;
+        bottom: 1rem;
+        left: 2rem;
+      }
+      .dots {
+        height: 30px;
+        left: 44%;
+      }
+
+      .resume-button {
+        margin: 0;
+      }
+}
