@@ -4,5 +4,4 @@ The static comp challenge is a series of three challenges to keep you working th
 
 Website is responsive across various devices and screen sizes.
 
-## Template:
 ![static-comp-challenge-1](https://user-images.githubusercontent.com/36767936/42798086-885feba0-894f-11e8-8693-4cca39956a9e.jpg)
