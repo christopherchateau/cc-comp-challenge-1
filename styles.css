@@ -69,7 +69,7 @@ button {
 }
 
 .profile {
-  background-color: #FF9E00;
+  background-color: #FF9E00; 
   grid-column: 3;
   grid-row: 1;
 }
