@@ -1,0 +1,34 @@
+<svg width="408" height="408" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <g id="keyboard-control">
+    <path id="svg_2" fill="#FFFFFF" d="m51,153c-28.05,0 -51,22.95 -51,51s22.95,51 51,51s51,-22.95 51,-51s-22.95,-51 -51,-51zm306,0c-28.05,0 -51,22.95 -51,51s22.95,51 51,51s51,-22.95 51,-51s-22.95,-51 -51,-51zm-153,0c-28.05,0 -51,22.95 -51,51s22.95,51 51,51s51,-22.95 51,-51s-22.95,-51 -51,-51z"/>
+   </g>
+  </g>
+  <g id="svg_3"/>
+  <g id="svg_4"/>
+  <g id="svg_5"/>
+  <g id="svg_6"/>
+  <g id="svg_7"/>
+  <g id="svg_8"/>
+  <g id="svg_9"/>
+  <g id="svg_10"/>
+  <g id="svg_11"/>
+  <g id="svg_12"/>
+  <g id="svg_13"/>
+  <g id="svg_14"/>
+  <g id="svg_15"/>
+  <g id="svg_16"/>
+  <g id="svg_17"/>
+  <ellipse ry="51" rx="49" id="svg_19" cy="205.446429" cx="202.928571" stroke-width="1.5" stroke="#e5e5e5" fill="#e5e5e5"/>
+  <ellipse ry="51" rx="49" id="svg_21" cy="203.446429" cx="356.928571" stroke-width="1.5" stroke="#e5e5e5" fill="#e5e5e5"/>
+  <ellipse ry="54.5" rx="53.5" id="svg_22" cy="203.660714" cx="205.428571" stroke-width="1.5" stroke="#7f7f7f" fill="#7f7f7f"/>
+  <ellipse ry="54.5" rx="53.5" id="svg_24" cy="203.660714" cx="352.428571" stroke-width="1.5" stroke="#7f7f7f" fill="#7f7f7f"/>
+ </g>
+</svg>

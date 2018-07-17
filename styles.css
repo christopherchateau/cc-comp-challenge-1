@@ -5,13 +5,14 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #D0D0D0;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
 }
 
 header {
   line-height: 1.4;
-  padding: 2rem 1rem .5rem 1.5rem;
+  padding: 3rem 1rem .5rem 1.5rem;
   text-align: left;
 }
 
@@ -21,36 +22,36 @@ h1 {
 
 h2 {
   font-size: 1rem;
-  font-weight: 100;
-  margin: 1rem 0;
+  font-weight: 300;
   line-height: 2;
+  margin: 1rem 0;
 }
 
 h3 {
   font-size: .8rem;
   margin: .6rem 0;
-  font-weight: 100;
 }
 h4 {
+  font-size: 1rem;
   margin-top: .4rem;
 }
 
 button {
   background-color: #39BE76;
-  border: 2px solid white;
+  border: 4px solid white;
   color: white;
-  margin-top: .3rem;
   margin-bottom: .3rem;
+  margin-top: .3rem;
   width: 8rem;
 }
 
 .wrapper {
+  border: 1rem solid #D0D0D0;
   color: white;
   display: grid;
   font-size: .7rem;
   grid-auto-columns: 1fr 1fr 1fr 2fr;
-  grid-auto-rows: minmax(16rem, 33vh);
-  border: 1rem solid #D0D0D0;
+  grid-auto-rows: minmax(18rem, auto);
   text-align: center;
 }
 
@@ -71,61 +72,56 @@ button {
   background-color: #FF9E00;
   grid-column: 3;
   grid-row: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .experience {
+  background-color: #1E8BC4;
   grid-column: 1;
   grid-row: 2;
-  background-color: #1E8BC4;
 }
 
 .education { 
+  background-color: #F15A49;
   grid-column: 2;
   grid-row: 2;
-  background-color: #F15A49;
-}
-
-.photo {
-  background-image: url("https://farm2.staticflickr.com/1770/42912719711_167cdbc8c7_b.jpg");
-  background-position: right; 
-  grid-column: 4;
-  grid-row: 1 / 4;  
-  background-color: black;
-  background-size: cover;
 }
 
 .blog {
+  background-color: #39BE76;
   grid-column: 3;
   grid-row: 2;
-  background-color: #39BE76;
 }
 
 .contact {
+  background-color: #1E8BC4;
   grid-column: 2;
   grid-row: 3;
-  background-color: #1E8BC4;
 }
 
 .portfolio {
+  background-color: #F46026;
   grid-column: 3;
   grid-row: 3;
-  background-color: #F46026;
 }
 
 .social-menu {
+  background-color: #F46026;
   grid-column: 1;
   grid-row: 3;
-  background-color: #F46026;
 }
 
 .icons {
-  /*margin: 6rem auto 0 auto;*/
-  width: 3.5rem;
-  display: block;
+  margin: 6rem auto 0 auto;
+  width: 4rem;
+}
+
+.photo {
+  background-color: black;
+  background-image: url("https://farm2.staticflickr.com/1770/42912719711_167cdbc8c7_b.jpg");
+  background-position: right; 
+  background-size: cover;
+  grid-column: 4;
+  grid-row: 1 / 4;  
 }
 
 .dots {
@@ -166,239 +162,243 @@ article:visited, a:visited {
 
 article:hover, a:hover, button:hover {
   background-color: grey;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
 }
 
-@media screen and (max-width: 1122px) {
+@media screen and (max-width: 1160px) {
 
-      header {
-        padding: 1rem 1rem 1rem 1.5rem;
-      }
+  header {
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
 
-      h4 {
-        margin-bottom: 2rem;
-      }
+  h4 {
+    margin-bottom: 2rem;
+  }
 
-      .wrapper {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: minmax(13rem, 20vh);
-      }
+  .wrapper {
+    grid-auto-rows: minmax(13rem, auto);
+    grid-template-columns: 1fr 1fr;
+  }
 
-      .intro {
-        grid-column: 1;
-        grid-row: 1;
-      }
+  .intro {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-      .profile {
-        grid-column: 2;
-        grid-row: 1;
-        padding-top: 1.2rem;
-      }
+  .profile {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 1.2rem;
+  }
 
-      .experience {
-        grid-column: 2;
-        grid-row: 3;
-      }
+  .experience {
+    grid-column: 2;
+    grid-row: 3;
+  }
 
-      .education { 
-        grid-column: 1;
-        grid-row: 3;
-      }
+  .education { 
+    grid-column: 1;
+    grid-row: 3;
+  }
 
-      .blog {
-        grid-column: 1;
-        grid-row: 4;
-      }
+  .blog {
+    grid-column: 1;
+    grid-row: 4;
+  }
 
-      .social-menu {
-        grid-column: 2;
-        grid-row: 4;
-      }
-  
-      .contact {
-        grid-column: 2;
-        grid-row: 5;
-      }
+  .social-menu {
+    grid-column: 2;
+    grid-row: 4;
+  }
 
-      .portfolio {
-        grid-column: 1;
-        grid-row: 5;
-      }
+  .contact {
+    grid-column: 2;
+    grid-row: 5;
+  }
 
-      .photo {
-        background-image: url("steamboat.jpg");  
-        background-position: bottom;
-        grid-column: 1 / 3;
-        grid-row: 2;  
-        height: 20rem;     
-      }
+  .portfolio {
+    grid-column: 1;
+    grid-row: 5;
+  }
 
-      .icons {
-        height: 4rem;
-        margin: 3.5rem auto 0rem auto;
-        width: 4rem;
-      }
+  .icons {
+    height: 4rem;
+    margin: 3.5rem auto 0rem auto;
+    width: 4rem;
+  }
 
-      .dots {
-        height: 30px;
-        left: 46%;
-        position: relative;
-        top: .2rem;
-      }
+  .photo {
+    background-image: url("steamboat.jpg");  
+    background-position: bottom;
+    grid-column: 1 / 3;
+    grid-row: 2;  
+    height: 20rem;     
+  }
 
-      .arrow-right, 
-      .arrow-left {
-        height: 50px;
-        position: relative;
-        top: 40%;
-      }
+  .dots {
+    height: 30px;
+    left: 46%;
+    position: relative;
+    top: .2rem;
+  }
+
+  .arrow-right, 
+  .arrow-left {
+    height: 50px;
+    position: relative;
+    top: 40%;
+  }
 
 }
 
 @media screen and (max-width: 780px) {
 
-      .wrapper {
-        grid-auto-rows: minmax(12rem, auto);
-      }
+  .wrapper {
+    grid-auto-rows: minmax(12rem, auto);
+  }
 
-      .intro {
-        grid-column: 1 / 3;
-        grid-row: 1;
-      }
+  .intro {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
 
-      .profile {
-        grid-column: 1;
-        grid-row: 3;
-        padding-top: 0;
-      }
+  .profile {
+    grid-column: 1;
+    grid-row: 3;
+    padding-top: 0;
+  }
 
-      .experience {
-        grid-column: 2;
-        grid-row: 3;
-      }
+  .experience {
+    grid-column: 2;
+    grid-row: 3;
+  }
 
-      .education { 
-        grid-column: 1;
-        grid-row: 4;
-      }
+  .education { 
+    grid-column: 1;
+    grid-row: 4;
+  }
 
-      .blog {
-        grid-column: 2;
-        grid-row: 4;
-      }
+  .blog {
+    grid-column: 2;
+    grid-row: 4;
+  }
 
-      .social-menu {
-        grid-column: 1;
-        grid-row: 5;
-        background-color: #FF9E00;
-      }
+  .social-menu {
+    background-color: #FF9E00;
+    grid-column: 1;
+    grid-row: 5;
+  }
 
-      .portfolio {
-        grid-column: 2;
-        grid-row: 5;
-      }
-  
-      .contact {
-        grid-column: 1 / 3;
-        grid-row: 6;
-      }
+  .portfolio {
+    grid-column: 2;
+    grid-row: 5;
+  }
 
-      .photo {
-        grid-column: 1 / 3;
-        grid-row: 2;  
-        background-position: bottom;
-        background-image: url("steamboat.jpg");
-        height: 18rem;
-      }
+  .contact {
+    grid-column: 1 / 3;
+    grid-row: 6;
+  }
 
-      .arrow-right, 
-      .arrow-left {
-        height: 30px;
-        position: relative;
-        top: 45%;
-      }
+  .photo {
+    grid-column: 1 / 3;
+    grid-row: 2;  
+    height: 18rem;
+    background-image: url("steamboat.jpg");
+    background-position: bottom;
+  }
 
-@media screen and (max-width: 500px) {
+  .arrow-right, 
+  .arrow-left {
+    height: 30px;
+    position: relative;
+    top: 45%;
+  }
 
-      header {
-        text-align: center;
-      }
+}
 
+@media screen and (max-width: 540px) {
 
-      h4 {
-        padding-top: 2rem;
-        font-size: 1rem;
-        text-align: center;
-      }
+  header {
+    text-align: center;
+  }
 
-      .wrapper {
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(2rem, auto);
-      }
+  h4 {
+    font-size: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+  }
 
-      .intro {
-        grid-column: 1;
-        grid-row: 1;
-      }
+  .wrapper {
+    grid-auto-rows: minmax(2rem, auto);
+    grid-template-columns: 1fr;
+  }
 
-      .profile {
-        grid-column: 1;
-        grid-row: 3;
-      }
+  .intro {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-      .experience {
-        grid-column: 1;
-        grid-row: 4;
-      }
+  .profile {
+    grid-column: 1;
+    grid-row: 3;
+  }
 
-      .education { 
-        grid-column: 1;
-        grid-row: 5;
-      }
+  .experience {
+    grid-column: 1;
+    grid-row: 4;
+  }
 
-      .blog {
-        grid-column: 1;
-        grid-row: 6;
-      }
+  .education { 
+    grid-column: 1;
+    grid-row: 5;
+  }
 
-      .social-menu {
-        grid-column: 1;
-        grid-row: 7;
-      }
-  
-      .contact {
-        grid-column: 1;
-        grid-row: 8;
-      }
+  .blog {
+    grid-column: 1;
+    grid-row: 6;
+  }
 
-      .portfolio {
-        grid-column: 1;
-        grid-row: 9;
-      }
+  .social-menu {
+    grid-column: 1;
+    grid-row: 7;
+  }
 
-      .photo {
-        grid-column: 1;
-        grid-row: 2;  
-        background-position: left;
-        background-image: url("steamboat.jpg");
-        height: 14rem;
-      }
+  .contact {
+    grid-column: 1;
+    grid-row: 8;
+  }
 
-      .icons {
-        display: inline;
-        margin: 2.5rem auto 0 auto;
-        height: 3rem;
-        width: 3rem;
-        float: left;
-        position: relative;
-        bottom: 1rem;
-        left: 2rem;
-      }
-      .dots {
-        height: 30px;
-        left: 44%;
-      }
+  .portfolio {
+    grid-column: 1;
+    grid-row: 9;
+  }
 
-      .resume-button {
-        margin: 0;
-      }
+  .icons {
+    bottom: 1rem;
+    display: inline;
+    float: left;
+    height: 3rem;
+    left: 2rem;
+    margin: 2.5rem auto 0 auto;
+    position: relative;
+    width: 3rem;
+  }
+  .dots {
+    height: 30px;
+    left: 44%;
+  }
+
+  .photo {
+    grid-column: 1;
+    grid-row: 2;  
+    height: 14rem;
+    background-image: url("steamboat.jpg");
+    background-position: left;
+  }
+
+  .resume-button {
+    margin: 0;
+  }
+
 }
