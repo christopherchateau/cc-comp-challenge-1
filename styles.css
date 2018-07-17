@@ -384,6 +384,7 @@ article:hover, a:hover, button:hover {
     position: relative;
     width: 3rem;
   }
+
   .dots {
     height: 30px;
     left: 44%;
@@ -398,7 +399,7 @@ article:hover, a:hover, button:hover {
   }
 
   .resume-button {
-    margin: 0;
+    margin: .2;
   }
 
 }
