@@ -7,4 +7,4 @@ Website is responsive across various devices and screen sizes.
 ![static-comp-challenge-1](https://user-images.githubusercontent.com/36767936/42798086-885feba0-894f-11e8-8693-4cca39956a9e.jpg)
 
 
-(https://github.com/christopherchateau/cc-comp-challenge-1/blob/master/cc-comp-challenge.png)
+![static-comp-challenge-1](https://github.com/christopherchateau/cc-comp-challenge-1/blob/master/cc-comp-challenge.png)
